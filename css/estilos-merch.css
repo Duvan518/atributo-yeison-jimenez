@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(45, 44, 45);
+    color: #f3eeee;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(30, 30, 30);
+    color: #f3eeee;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px 20px;
+    margin: 0 auto; 
+    position: relative;
+    flex-wrap: wrap; 
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; 
+}
+
+.navegacion li a {
+    text-decoration: none;
+    color: #f3eeee;
+    padding: 10px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navegacion a:hover {
+    color: #f00f0f;
+}
+
+.registro {
+    position: absolute;
+    right: 20px; 
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.registro a {
+    text-decoration: none;
+    color: #f3eeee;
+    padding: 7px;
+}
+
+.registro div {
+    background-color: #f00f0f;
+    color: #f3eeee;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.merch {
+    position: relative;
+    text-align: center; 
+    max-width: 1250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.merch img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.merch h2 {
+    position: absolute;
+    top: -15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white;
+    font-size: 2rem; 
+    font-weight: bold;
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+}
+
+
+.gorras, .barriles {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gorras h3, .barriles h3 {
+    grid-column: span 4;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gorras div, .barriles div {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.gorras img, .barriles img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    object-fit: cover; 
+    margin: auto; 
+    display: block;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(30, 30, 30);
+    color: #f3eeee;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .list-fin {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+footer .list-fin li a {
+    text-decoration: none;
+    color: #f3eeee;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer .list-fin li a:hover {
+    color: #f00f0f;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .contenedor {
+        max-width: 900px; 
+        padding: 10px;
+    }
+
+    .gorras img, .barriles img {
+        max-width: 200px; 
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* General */
+    body {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .contenedor {
+        padding: 10px;
+    }
+
+    .navegacion {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .registro {
+        position: static;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .merch img {
+        max-width: 85%; 
+        margin: 0 auto 8px;
+    }
+    .merch h2{
+        font-size: 1.5rem;
+    }
+
+    
+    .gorras, .barriles {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 8px; 
+        justify-content: space-between;
+    }
+
+    .gorras div, .barriles div {
+        text-align: center;
+        padding: 5px;
+    }
+    .logob img{
+        width: 70%; 
+        margin-bottom: 8px;
+    }
+
+    .gorras img, .barriles img {
+        width: 80%; 
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .gorras h3, .barriles h3 {
+        font-size: 0.9rem; 
+    }
+
+    .gorras div p, .barriles div p {
+        font-size: 0.8rem; 
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header h1 {
+        font-size: 1.2rem; 
+    }
+
+    .navegacion {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .navegacion li a {
+        font-size: 0.8rem; 
+    }
+
+    .registro {
+        flex-direction: column; 
+        gap: 5px;
+        right: 0;
+    }
+    .list-fin {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .merch {
+        text-align: center;
+    }
+
+    .merch img {
+        max-width: 90%; 
+        margin: 0 auto;
+    }
+    .merch h2{
+        font-size: 0.8rem;
+    }
+    .logog{
+        max-width: 38%; 
+        gap: 15px;
+        margin: 0 auto;
+    }
+    
+    .gorras, .barriles {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+        align-items: center; 
+    }
+
+    .gorras div, .barriles div {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .gorras img, .barriles img {
+        max-width: 90%; 
+        height: auto;
+        margin: 0 auto; 
+        border-radius: 10px;
+    }
+
+    .gorras h3, .barriles h3 {
+        font-size: 1rem; 
+        text-align: center;
+    }
+}

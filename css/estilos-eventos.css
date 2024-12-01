@@ -1,0 +1,293 @@
+body {
+    line-height: 1.6;
+    background-color: rgb(45, 44, 45);
+    color: #f3eeee;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(30, 30, 30);
+    color: #f3eeee;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.navegacion li a {
+    text-decoration: none;
+    color: #f3eeee;
+    padding: 10px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navegacion a:hover {
+    color: #f00f0f;
+}
+
+.registro {
+    position: absolute;
+    right: 20px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.registro a {
+    text-decoration: none;
+    color: #f3eeee;
+    padding: 7px;
+}
+
+.registro div {
+    background-color: #f00f0f;
+    text-decoration: none;
+    color: #f3eeee;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.contenedor-imagen {
+    text-align: center;
+}
+
+.contenedor-imagen img {
+    width: 100%; 
+    height: auto; 
+    max-width: 1250px; 
+    margin: 0 auto;
+}
+
+.fechas-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fechas-eventos h3 {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.fechas-eventos div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.fechas-eventos img {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.fechas-eventos div div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.fechas-eventos p {
+    margin: 5px 0;
+    text-align: left;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(30, 30, 30);
+    color: #f3eeee;
+    padding: 20px;
+    text-align: center;
+}
+.contenedor-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.list-fin {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.list-fin li a {
+    text-decoration: none;
+    color: #f3eeee;
+    padding: 10px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.list-fin a:hover {
+    color: #f00f0f;
+}
+
+@media (max-width: 1024px) {
+    .fechas-eventos {
+        gap: 15px;
+    }
+
+    .fechas-eventos div {
+        flex: 1 1 calc(50% - 10px);
+        padding: 10px;
+    }
+
+    .fechas-eventos img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .contenedor-imagen img {
+        width: 85%;
+    }
+
+    .fechas-eventos h3 {
+        font-size: 22px;
+    }
+
+    .fechas-eventos p {
+        font-size: 15px;
+    }
+
+    .navegacion {
+        gap: 20px;
+    }
+
+    .registro {
+        right: 10px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-imagen img {
+        width: 90%; 
+    }
+
+    .fechas-eventos {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .fechas-eventos div {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .fechas-eventos img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .fechas-eventos h3 {
+        font-size: 18px;
+    }
+
+    .fechas-eventos p {
+        font-size: 14px;
+    }
+
+    
+    .navegacion {
+        flex-direction: column; 
+        gap: 15px;
+        align-items: center; 
+    }
+
+    
+    .registro {
+        position: relative;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+        right: unset; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-imagen img {
+        width: 90%;
+    }
+
+    .fechas-eventos {
+        flex-direction: column;
+    }
+
+    .fechas-eventos div {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .fechas-eventos img {
+        width: 70px;
+        height: 70px;
+    }
+
+    
+    .navegacion {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center; 
+    }
+
+    
+    .list-fin {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .registro {
+        position: relative;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+        right: unset; 
+    }
+}
